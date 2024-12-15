@@ -1,0 +1,5 @@
+pandas
+isodate
+tqdm
+streamlit
+plotly
