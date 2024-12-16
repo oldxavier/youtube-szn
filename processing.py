@@ -81,7 +81,7 @@ def get_top_50_watched_videos(df: pd.DataFrame, year: int | None = None):
     adf = df.groupby("name").agg(
         {"adjusted_duration": "sum", "video_id": pd.Series.nunique}
     )
-    output = adf.sort_values(by="adjusted_duration", ascending=False).head(10)
+    output = adf.sort_values(by="adjusted_duration", ascending=False)
     return output
 
 
